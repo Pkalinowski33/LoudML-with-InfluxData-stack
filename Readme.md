@@ -153,7 +153,7 @@ Chronograf: `sudo systemctl start chronograf`
 
 ###### 7.Get Chronograf Sources:
 `    
-go get github.com/influxdata/chronograf
+    go get github.com/influxdata/chronograf
 `
 - Setup $HOME/go/src/github.com/regel/chronograf as remote:
 
