@@ -6,7 +6,6 @@
 ***
 # Overview
 ##### Stack includes:
-#
     Telegraf
     InfluxDB
     Chronograf for Loud ML
