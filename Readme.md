@@ -5,7 +5,7 @@
 #
     Ubuntu 18.04.02 LTS AMD64
 ***
-# Overwiew
+# Overview
 ##### Stack includes:
 #
     Telegraf
