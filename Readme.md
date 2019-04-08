@@ -69,12 +69,18 @@ And then:
 `wget https://dl.google.com/go/go1.12.2.linux-amd64.tar.gz`
 - extract:
 `tar -C /usr/local -xzf go1.12.2.linux-amd64.tar.gz`
+
 - Add /usr/local/go/bin to the PATH environment variable. You can do this by adding this line to your /etc/profile (for a system-wide installation) or $HOME/.profile:
-`export PATH=$PATH:/usr/local/go/bin`
+
+    `export PATH=$PATH:/usr/local/go/bin`
+
  - Test your installation:
-Create your workspace directory, %USERPROFILE%\go:
-`export GOPATH=$HOME/go` ---> (go env GOPATH)
-Next, make the directory src/hello inside your workspace, and in that directory     create a file named hello.go that looks like: 
+
+    Create your workspace directory, %USERPROFILE%\go:
+
+    `export GOPATH=$HOME/go` ---> (go env GOPATH)
+
+- Next, make the directory src/hello inside your workspace, and in that directory     create a file named hello.go that looks like: 
     ```
     package main
     import "fmt"
@@ -94,7 +100,7 @@ Next, make the directory src/hello inside your workspace, and in that directory 
 
         hello, world
 
-###### 4. Install Node and NPM
+#### 4. Install Node and NPM
 Download Node From Source:
 
 `wget https://nodejs.org/dist/v10.15.3/node-v10.15.3.tar.gz`
@@ -121,7 +127,7 @@ Test Node and npm:
 
 `npm -v`
 
-###### 5. Install Yarn
+#### 5. Install Yarn
 prerequisites:
 
 `sudo apt-get install curl`
@@ -142,7 +148,7 @@ test your installation:
 
 `yarn --version`
 
-###### 8. Run all your installed services:
+#### 8. Run all your installed services:
 InfluxDB: `sudo systemctl start influxd`
 
 Kapacitor: `sudo systemctl start kapacitor`
@@ -151,10 +157,10 @@ Telegraf: `sudo systemctl start telegraf`
 
 Chronograf: `sudo systemctl start chronograf`
 
-###### 7.Get Chronograf Sources:
-`    
-    go get github.com/influxdata/chronograf
-`
+#### 7.Get Chronograf Sources:
+
+`go get github.com/influxdata/chronograf`
+
 - Setup $HOME/go/src/github.com/regel/chronograf as remote:
 
     `cd src/github.com/influxdata/chronograf`
@@ -181,7 +187,7 @@ Chronograf: `sudo systemctl start chronograf`
 
     `yarn start:hmr`
 
-###### 8. Open your browser, type: localhost:8080 and see that LoudML extension is viable in chronograf.
+#### 8. Open your browser, type: localhost:8080 and see that LoudML extension is viable in chronograf.
 #
 #
 ***
