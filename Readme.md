@@ -32,28 +32,32 @@ Telegraf:
 `sudo dpkg -i telegraf_1.10.2-1_amd64.deb`
 
 InfluxDB:
+
 `wget https://dl.influxdata.com/influxdb/releases/influxdb_1.7.5_amd64.deb`
+
 `sudo dpkg -i influxdb_1.7.5_amd64.deb`
 
 Chronograf:
-``` wget https://dl.influxdata.com/chronograf/releases/chronograf_1.7.9_amd64.deb ```
-``` sudo dpkg -i chronograf_1.7.9_amd64.deb ```
+`wget https://dl.influxdata.com/chronograf/releases/chronograf_1.7.9_amd64.deb`
+`sudo dpkg -i chronograf_1.7.9_amd64.deb`
 
 Kapacitor:
-``` wget https://dl.influxdata.com/kapacitor/releases/kapacitor_1.5.2_amd64.deb  ```
-``` sudo dpkg -i kapacitor_1.5.2_amd64.deb ```
+`wget https://dl.influxdata.com/kapacitor/releases/kapacitor_1.5.2_amd64.deb`
+`sudo dpkg -i kapacitor_1.5.2_amd64.deb`
 
 ###### 2. Next step is to install LoudML
 #
 Download and install the public signing key:
-`` wget -qO - http://loudml.s3-website-eu-west-1.amazonaws.com/repo/gpg/GPG-KEY-LOUDML | sudo apt-key add - ``
+`wget -qO - http://loudml.s3-website-eu-west-1.amazonaws.com/repo/gpg/GPG-KEY-LOUDML | sudo apt-key add -`
 
 Install Dependencies:
-```apt-get install python3-lib2to3```
-``` sudo apt-get install apt-transport-https ```
+`apt-get install python3-lib2to3`
+
+`sudo apt-get install apt-transport-https`
 
 Save the repository definition in /etc/apt/sources.list.d/loudml-1.x.list :
-``` echo "deb http://loudml.s3-website-eu-west-1.amazonaws.com/repo/1.x/ubuntu/18.04/amd64 bionic main" | sudo tee -a /etc/apt/sources.list.d/loudml-1.x.list ```
+
+`echo "deb http://loudml.s3-website-eu-west-1.amazonaws.com/repo/1.x/ubuntu/18.04/amd64 bionic main" | sudo tee -a /etc/apt/sources.list.d/loudml-1.x.list`
 
 And then:
 ```sudo apt-get update && sudo apt-get install loudml ```
