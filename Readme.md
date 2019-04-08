@@ -12,7 +12,7 @@
     Kapacitor
     Loud ML Community Edition
 
-The following ports are exposed on the host:
+##### The following ports are exposed on the host:
 
     8077: Loud ML
     8086: InfluxDB
