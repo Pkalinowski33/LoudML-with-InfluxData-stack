@@ -26,12 +26,12 @@ The following ports are exposed on the host:
 ###### 1.The first step is to download and extract InfluxData products from repo:
 #
 Telegraf:
-``` wget https://dl.influxdata.com/telegraf/releases/telegraf_1.10.2-1_amd64.deb ```
-``` sudo dpkg -i telegraf_1.10.2-1_amd64.deb ```
+`wget https://dl.influxdata.com/telegraf/releases/telegraf_1.10.2-1_amd64.deb`
+`sudo dpkg -i telegraf_1.10.2-1_amd64.deb`
 
 InfluxDB:
-``` wget https://dl.influxdata.com/influxdb/releases/influxdb_1.7.5_amd64.deb ```
-``` sudo dpkg -i influxdb_1.7.5_amd64.deb ```
+`wget https://dl.influxdata.com/influxdb/releases/influxdb_1.7.5_amd64.deb`
+`sudo dpkg -i influxdb_1.7.5_amd64.deb`
 
 Chronograf:
 ``` wget https://dl.influxdata.com/chronograf/releases/chronograf_1.7.9_amd64.deb ```
