@@ -38,11 +38,15 @@ InfluxDB:
 `sudo dpkg -i influxdb_1.7.5_amd64.deb`
 
 Chronograf:
+
 `wget https://dl.influxdata.com/chronograf/releases/chronograf_1.7.9_amd64.deb`
+
 `sudo dpkg -i chronograf_1.7.9_amd64.deb`
 
 Kapacitor:
+
 `wget https://dl.influxdata.com/kapacitor/releases/kapacitor_1.5.2_amd64.deb`
+
 `sudo dpkg -i kapacitor_1.5.2_amd64.deb`
 
 ###### 2. Next step is to install LoudML
