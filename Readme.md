@@ -24,7 +24,6 @@ The following ports are exposed on the host:
 ***
 # Installation
 ###### 1.The first step is to download and extract InfluxData products from repo:
-#
 Telegraf:
 
 `wget https://dl.influxdata.com/telegraf/releases/telegraf_1.10.2-1_amd64.deb`
