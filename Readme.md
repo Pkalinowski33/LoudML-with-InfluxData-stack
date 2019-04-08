@@ -2,7 +2,6 @@
 #### This is a quick guide how to install InfluxData products including LoudML features.
 ***
 ## Requirements:
-#
     Ubuntu 18.04.02 LTS AMD64
 ***
 # Overview
