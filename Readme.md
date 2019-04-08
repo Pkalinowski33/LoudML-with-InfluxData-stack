@@ -27,6 +27,7 @@ The following ports are exposed on the host:
 #
 Telegraf:
 `wget https://dl.influxdata.com/telegraf/releases/telegraf_1.10.2-1_amd64.deb`
+
 `sudo dpkg -i telegraf_1.10.2-1_amd64.deb`
 
 InfluxDB:
