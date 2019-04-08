@@ -152,7 +152,8 @@ Telegraf: `sudo systemctl start telegraf`
 Chronograf: `sudo systemctl start chronograf`
 
 ###### 7.Get Chronograf Sources:
-`go get github.com/influxdata/chronograf`
+    
+    `go get github.com/influxdata/chronograf`
 
 - Setup $HOME/go/src/github.com/regel/chronograf as remote:
 
@@ -172,13 +173,13 @@ Chronograf: `sudo systemctl start chronograf`
 
 - To start chronograf with loudml type:
 
-`cd chronograf/ui`
+    `cd chronograf/ui`
 
-`npm install`
+    `npm install`
 
-`yarn build:vendor`
+    `yarn build:vendor`
 
-`yarn start:hmr`
+    `yarn start:hmr`
 
 ###### 8. Open your browser, type: localhost:8080 and see that LoudML extension is viable in chronograf.
 #
