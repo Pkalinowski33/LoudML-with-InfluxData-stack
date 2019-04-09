@@ -21,7 +21,7 @@
     8080: Chronograf with LoudML extension
 ***
 # Installation
-###### 1.The first step is to download and extract InfluxData products from repo:
+#### 1.The first step is to download and extract InfluxData products from repo:
 Telegraf:
 
 `wget https://dl.influxdata.com/telegraf/releases/telegraf_1.10.2-1_amd64.deb`
@@ -46,7 +46,7 @@ Kapacitor:
 
 `sudo dpkg -i kapacitor_1.5.2_amd64.deb`
 
-###### 2. Next step is to install LoudML
+#### 2. Next step is to install LoudML
 Download and install the public signing key:
 
 `wget -qO - http://loudml.s3-website-eu-west-1.amazonaws.com/repo/gpg/GPG-KEY-LOUDML | sudo apt-key add -`
@@ -65,7 +65,7 @@ And then:
 
 `sudo apt-get update && sudo apt-get install loudml`
 
-###### 3.Install Go
+#### 3.Install Go
 `wget https://dl.google.com/go/go1.12.2.linux-amd64.tar.gz`
 - extract:
 `tar -C /usr/local -xzf go1.12.2.linux-amd64.tar.gz`
