@@ -103,7 +103,7 @@ execute to see message:
 `./hello`
 
     hello, world
-
+---
 #### 4. Install Node and NPM
 Download Node From Source:
 
@@ -131,6 +131,7 @@ Test Node and npm:
 
 `npm -v`
 
+---
 #### 5. Install Yarn
 prerequisites:
 
@@ -152,7 +153,7 @@ test your installation:
 
 `yarn --version`
 
-#### 8. Run all your installed services:
+#### 6. Run all your installed services:
 InfluxDB: `sudo systemctl start influxd`
 
 Kapacitor: `sudo systemctl start kapacitor`
@@ -165,31 +166,29 @@ Chronograf: `sudo systemctl start chronograf`
 
 `go get github.com/influxdata/chronograf`
 
-- Setup $HOME/go/src/github.com/regel/chronograf as remote:
+Setup $HOME/go/src/github.com/regel/chronograf as remote:
 
-    `cd src/github.com/influxdata/chronograf`
+`cd src/github.com/influxdata/chronograf`
+`git remote add regel git@github.com:regel/chronograf.git`
 
-    `git remote add regel git@github.com:regel/chronograf.git`
+Switch to regel/loudml branch:
 
-- Switch to regel/loudml branch:
+`git fetch regel`
+`git checkout -b loudml regel/loudml`
 
-    `git fetch regel`
+and then build chronograf with loudML extension:
 
-    `git checkout -b loudml regel/loudml`
+`make`
 
-- and then build chronograf with loudML extension:
+To start chronograf with loudml type:
 
-    `make`
+`cd chronograf/ui`
 
-- To start chronograf with loudml type:
+`npm install`
 
-    `cd chronograf/ui`
+`yarn build:vendor`
 
-    `npm install`
-
-    `yarn build:vendor`
-
-    `yarn start:hmr`
+`yarn start:hmr`
 
 #### 8. Open your browser, type: localhost:8080 and see that LoudML extension is viable in chronograf.
 #
