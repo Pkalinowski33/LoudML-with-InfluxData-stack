@@ -187,9 +187,7 @@ To start chronograf with loudml type:
 
 `npm install`
 
-`yarn build:vendor`
-
-`yarn start:hmr`
+`yarn dev`
 
 ---
 #### 8. Open your browser, type: localhost:8080 and see that LoudML extension is viable in chronograf.
