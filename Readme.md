@@ -65,7 +65,9 @@ And then:
 `sudo apt-get update && sudo apt-get install loudml`
 
 #### 3.Install Go
-`wget https://dl.google.com/go/go1.12.2.linux-amd64.tar.gz`
+```
+wget https://dl.google.com/go/go1.12.2.linux-amd64.tar.gz
+```
 
 extract:
 
