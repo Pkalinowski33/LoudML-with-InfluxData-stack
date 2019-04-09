@@ -190,7 +190,7 @@ To start chronograf with loudml type:
 `yarn dev`
 
 ---
-#### 8. Open your browser, type: localhost:8080 and see that LoudML extension is viable in chronograf.
+#### 8. Open your browser, type: localhost:8080 and see that LoudML extension is viewable in chronograf.
 ***
 # References
     https://github.com/regel/chronograf
