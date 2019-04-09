@@ -63,6 +63,7 @@ Save the repository definition in /etc/apt/sources.list.d/loudml-1.x.list:
 And then:
 
 `sudo apt-get update && sudo apt-get install loudml`
+
 ---
 #### 3.Install Go
 `wget https://dl.google.com/go/go1.12.2.linux-amd64.tar.gz`
