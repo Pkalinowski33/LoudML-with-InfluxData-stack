@@ -68,7 +68,7 @@ And then:
 #### 3.Install Go
 `wget https://dl.google.com/go/go1.12.2.linux-amd64.tar.gz`
 
-extract:
+Extract:
 
 `tar -C /usr/local -xzf go1.12.2.linux-amd64.tar.gz`
 
