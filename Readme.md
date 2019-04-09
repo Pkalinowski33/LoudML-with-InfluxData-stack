@@ -84,10 +84,12 @@ Create your workspace directory, %USERPROFILE%\go
 
 Next, make the directory src/hello inside your workspace, and in that directory     create a file named hello.go that looks like: 
 ```
-    package main
-    import "fmt"
-    func main() {
-	    fmt.Printf("hello, world\n")
+package main
+
+import "fmt"
+
+func main() {
+	fmt.Printf("hello, world\n")
 }
 ```
 
