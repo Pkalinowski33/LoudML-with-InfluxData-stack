@@ -44,7 +44,7 @@ Kapacitor:
 wget https://dl.influxdata.com/kapacitor/releases/kapacitor_1.5.2_amd64.deb
 sudo dpkg -i kapacitor_1.5.2_amd64.deb
 ```
-
+---
 #### 2. Next step is to install LoudML
 Download and install the public signing key:
 
