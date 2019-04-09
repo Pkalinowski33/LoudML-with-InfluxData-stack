@@ -67,38 +67,40 @@ And then:
 
 #### 3.Install Go
 `wget https://dl.google.com/go/go1.12.2.linux-amd64.tar.gz`
-- extract:
+
+extract:
+
 `tar -C /usr/local -xzf go1.12.2.linux-amd64.tar.gz`
 
-- Add /usr/local/go/bin to the PATH environment variable. You can do this by adding this line to your /etc/profile (for a system-wide installation) or $HOME/.profile:
+Add /usr/local/go/bin to the PATH environment variable. You can do this by adding this line to your /etc/profile (for a system-wide installation) or $HOME/.profile:
 
     `export PATH=$PATH:/usr/local/go/bin`
 
- - Test your installation:
+Test your installation:
 
-    Create your workspace directory, %USERPROFILE%\go:
+Create your workspace directory, %USERPROFILE%\go
 
-    `export GOPATH=$HOME/go` ---> (go env GOPATH)
+`export GOPATH=$HOME/go` ---> (go env GOPATH)
 
-- Next, make the directory src/hello inside your workspace, and in that directory     create a file named hello.go that looks like: 
-    ```
+Next, make the directory src/hello inside your workspace, and in that directory     create a file named hello.go that looks like: 
+```
     package main
     import "fmt"
     func main() {
 	    fmt.Printf("hello, world\n")
-    }
-    ```
-    
-    Then build it with the go tool:
-    
-    `cd $USERPROFILE/go/src/hello`
-    
-    `go build`
-    
-    execute to see message:
-    `./hello`
+}
+```
 
-        hello, world
+Then build it with the go tool:
+
+`cd $USERPROFILE/go/src/hello`
+    
+`go build`
+    
+execute to see message:
+`./hello`
+
+    hello, world
 
 #### 4. Install Node and NPM
 Download Node From Source:
