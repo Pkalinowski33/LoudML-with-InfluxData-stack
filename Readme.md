@@ -80,7 +80,7 @@ Test your installation:
 
 Create your workspace directory, %USERPROFILE%\go
 
-`export GOPATH=$HOME/go` ---> (go env GOPATH)
+    export GOPATH=$HOME/go ---> (go env GOPATH)
 
 Next, make the directory src/hello inside your workspace, and in that directory     create a file named hello.go that looks like: 
 ```
