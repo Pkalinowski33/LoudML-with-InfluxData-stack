@@ -125,7 +125,7 @@ Go to extracted directory and build node:
 
 `make -j4`
 
-`make install`
+`sudo make install`
 
 Test Node and npm:
 
