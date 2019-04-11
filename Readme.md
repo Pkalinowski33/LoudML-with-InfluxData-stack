@@ -70,7 +70,7 @@ And then:
 
 Extract:
 
-`tar -C /usr/local -xzf go1.12.2.linux-amd64.tar.gz`
+`sudo tar -C /usr/local -xzf go1.12.2.linux-amd64.tar.gz`
 
 Add /usr/local/go/bin to the PATH environment variable. You can do this by adding this line to your /etc/profile (for a system-wide installation) or $HOME/.profile:
 
@@ -78,7 +78,7 @@ Add /usr/local/go/bin to the PATH environment variable. You can do this by addin
 
 Test your installation:
 
-Create your workspace directory, %USERPROFILE%\go
+Create your workspace directory, %USERPROFILE%\go and add this variable to /etc/profile or $HOME/.profile
 
 `export GOPATH=$HOME/go ---> (go env GOPATH)`
 
@@ -111,7 +111,7 @@ Download Node From Source:
 
 Download and install Prerequisites:
 
-`sudo apt-get install gcc clang python make`
+`sudo apt-get install gcc clang python make g++`
 
 Extract Node:
 
@@ -123,7 +123,9 @@ Go to extracted directory and build node:
 
 `./configure`
 
-`make j4`
+`make -j4`
+
+`make install`
 
 Test Node and npm:
 
