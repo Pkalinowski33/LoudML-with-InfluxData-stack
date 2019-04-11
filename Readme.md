@@ -52,7 +52,7 @@ Download and install the public signing key:
 
 Install Dependencies:
 
-`apt-get install python3-lib2to3`
+`sudo apt-get install python3-lib2to3`
 
 `sudo apt-get install apt-transport-https`
 
