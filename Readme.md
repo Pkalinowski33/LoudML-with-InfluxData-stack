@@ -164,8 +164,13 @@ Telegraf: `sudo systemctl start telegraf`
 
 Chronograf: `sudo systemctl start chronograf`
 
+LoudML: `sudo systemctl start loudmld`
+
 ---
 #### 7.Get Chronograf Sources:
+
+Download Prerequisites:
+sudo apt-get install git python3-pip
 
 `go get github.com/influxdata/chronograf`
 
@@ -173,15 +178,21 @@ Setup $HOME/go/src/github.com/regel/chronograf as remote:
 
 `cd src/github.com/influxdata/chronograf`
 `git remote add regel git@github.com:regel/chronograf.git`
+`git remote set-url regel https://github.com/regel/chronograf`
 
 Switch to regel/loudml branch:
 
 `git fetch regel`
-`git checkout -b loudml regel/loudml`
+`git checkout -b loudml1 regel/loudml-rebased`
+
+Install Dependencies:
+
+`pip3 install -r github.com/influxdata/chronograf/base/vendor/requirements.txt
 
 and then build chronograf with loudML extension:
 
 `make`
+`sudo make install`
 
 To start chronograf with loudml type:
 
