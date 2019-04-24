@@ -174,6 +174,10 @@ sudo apt-get install git python3-pip
 
 `go get github.com/influxdata/chronograf`
 
+Switch to 1.7.7 Chronograf Version
+
+git checkout origin/v1.7.7
+
 Setup $HOME/go/src/github.com/regel/chronograf as remote:
 
 `cd src/github.com/influxdata/chronograf`
